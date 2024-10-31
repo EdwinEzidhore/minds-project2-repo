@@ -26,14 +26,13 @@ navLink.forEach(n => {
 
 // SCROLL HEADER
 const bgheader = () => {
-    
-    const header = document.getElementById('header')
-    this.scroll >= 50 ? header.classList.add('bg-header')
-    :header.classList.remove('bg-header')    
-}
+    const header = document.getElementById('header');
+    window.scrollY >= 50 ? header.classList.add('bg-header') : header.classList.remove('bg-header');
+};
 
-window.addEventListener('scroll', bgheader)
-bgheader()
+window.addEventListener('scroll', bgheader);
+bgheader();
+
 
 
 // SHOW-SCROLL-UP
